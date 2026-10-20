@@ -107,7 +107,7 @@ In the Railway dashboard, select your newly created service and navigate to the 
 3. Click **Generate Domain**.
 4. Railway will generate a live HTTPS URL, e.g.:
    ```
-   https://zomato-ai-concierge-production.up.railway.app
+   https://zomato-ai-concierge-production-ed3a.up.railway.app
    ```
 5. **Copy this URL** — you will use it in Step 2.
 
@@ -115,7 +115,7 @@ In the Railway dashboard, select your newly created service and navigate to the 
 Test your live backend in a browser or terminal:
 ```bash
 # Health Check Endpoint
-curl -i https://<your-railway-domain>.up.railway.app/health
+curl -i https://zomato-ai-concierge-production-ed3a.up.railway.app/health
 ```
 
 Expected JSON response:
@@ -125,14 +125,14 @@ Expected JSON response:
   "service": "AI Restaurant Recommendation API",
   "version": "1.0.0",
   "dataset_loaded": true,
-  "total_records": 51717,
+  "total_records": 12530,
   "llm_configured": true,
   "groq_model": "qwen/qwen3.8-27b"
 }
 ```
 
 Interactive Swagger documentation is also immediately available at:
-`https://<your-railway-domain>.up.railway.app/docs`
+`https://zomato-ai-concierge-production-ed3a.up.railway.app/docs`
 
 ---
 
@@ -149,11 +149,11 @@ In [`frontend/vercel.json`](file:///c:/Users/DARSHAN/Documents/BitbyBit/AI/01%20
   "rewrites": [
     {
       "source": "/api/:match*",
-      "destination": "https://<your-railway-domain>.up.railway.app/api/:match*"
+      "destination": "https://zomato-ai-concierge-production-ed3a.up.railway.app/api/:match*"
     },
     {
       "source": "/health",
-      "destination": "https://<your-railway-domain>.up.railway.app/health"
+      "destination": "https://zomato-ai-concierge-production-ed3a.up.railway.app/health"
     }
   ]
 }

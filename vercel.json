@@ -4,11 +4,11 @@
   "rewrites": [
     {
       "source": "/api/:match*",
-      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/api/:match*"
+      "destination": "https://zomato-ai-concierge-production-ed3a.up.railway.app/api/:match*"
     },
     {
       "source": "/health",
-      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/health"
+      "destination": "https://zomato-ai-concierge-production-ed3a.up.railway.app/health"
     },
     {
       "source": "/",
