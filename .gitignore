@@ -1,0 +1,38 @@
+# Environment & Secrets
+.env
+*.env.local
+*.env.*
+
+# Python cache & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Data artifacts
+data/raw/
+data/processed/*.duckdb
+# Allow cleaned parquet (3.8MB) for instant container startup without raw ETL on deploy
+data/processed/*.parquet
+!data/processed/zomato_cleaned.parquet
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Scratch, dev agent artifacts & Graphify
+scratch/
+.agents/
+graphify-out/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

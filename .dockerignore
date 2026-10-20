@@ -1,0 +1,43 @@
+# Git & version control
+.git
+.gitignore
+.gitattributes
+
+# Environment secrets (NEVER bake credentials into Docker images)
+.env
+*.env
+*.env.*
+*.env.local
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & compiled bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# Scratch & local developer files
+scratch/
+graphify-out/
+run_app.bat
+0.11.0
+=
+
+# Raw dataset files (only data/processed/ is needed in image)
+data/raw/
+*.csv
+
+# Documentation files (optional to reduce image size)
+Doc/
+*.md

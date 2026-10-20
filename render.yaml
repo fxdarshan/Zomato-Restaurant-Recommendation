@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: zomato-ai-concierge
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false # Set securely in Render dashboard
+      - key: GROQ_MODEL
+        value: qwen/qwen3.8-27b
+      - key: LOG_LEVEL
+        value: INFO
+      - key: ENABLE_QUERY_CACHE
+        value: "true"
+      - key: CACHE_TTL_SECONDS
+        value: "3600"

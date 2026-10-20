@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/api/:match*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/health"
+    },
+    {
+      "source": "/",
+      "destination": "/frontend/index.html"
+    },
+    {
+      "source": "/((?!api|health).*)",
+      "destination": "/frontend/$1"
+    }
+  ]
+}

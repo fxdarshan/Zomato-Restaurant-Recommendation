@@ -1,0 +1,28 @@
+# Dataset & Ingestion
+datasets>=3.0.0
+huggingface_hub>=0.25.0
+
+# High-Performance Data Processing & Columnar Querying
+pandas>=2.2.0
+polars>=1.9.0
+pyarrow>=17.0.0
+duckdb>=1.1.0
+
+# LLM SDK — Groq (ultra-low-latency LPU inference)
+groq>=0.11.0
+
+# Data Validation & Settings Management
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-dotenv>=1.0.1
+
+# Application Backend API
+fastapi>=0.115.0
+uvicorn[standard]>=0.31.0
+
+# Frontend Presentation
+streamlit>=1.39.0
+
+# Testing & Benchmarking
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
