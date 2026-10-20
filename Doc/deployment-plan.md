@@ -180,6 +180,7 @@ git push
    - **Framework Preset**: Select **Other**.
    - **Root Directory**: Click **Edit** and choose `frontend` (Recommended), or leave as `./` if using root `vercel.json`.
    - **Build and Output Settings**: Leave defaults (no build command needed for pure static HTML/JS).
+   - **Environment Variables**: **None needed (Leave empty)**. The frontend proxies all API calls via `vercel.json` rewrites, and sensitive keys (like Groq API key) stay securely on Railway.
 5. Click **Deploy**.
 6. Vercel will complete deployment in ~15 seconds and assign a production URL:
    ```
