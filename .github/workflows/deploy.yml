@@ -47,13 +47,21 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
+          load: true
           push: false
           tags: zomato-ai-concierge:latest
 
       - name: Test Container Startup & Healthcheck
         run: |
           docker run -d --name test-app -p 8000:8000 -e GROQ_API_KEY=mock_key zomato-ai-concierge:latest
-          sleep 10
+          echo "Waiting for container to initialize..."
+          for i in $(seq 1 15); do
+            if curl -s http://localhost:8000/health | grep -q "healthy"; then
+              echo "Container is healthy!"
+              break
+            fi
+            sleep 2
+          done
           docker ps
           curl -f http://localhost:8000/health || (docker logs test-app && exit 1)
           docker stop test-app
