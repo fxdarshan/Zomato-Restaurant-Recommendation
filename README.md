@@ -1,4 +1,4 @@
-# ⚜️ Zomato Royal Concierge — AI Restaurant Recommendation Engine
+# 🍽️ Zomato Concierge — AI Dining Experience
 
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-1.0.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -18,7 +18,7 @@ An enterprise-grade, **Hybrid Retrieval-Augmented Recommendation (HRAR)** system
 - **Deterministic Pre-Filtering**: Over 51,000+ restaurant records pruned down to top candidates in $< 35\text{ms}$ using columnar Apache Parquet and Polars/DuckDB.
 - **Zero-Hallucination Grounding**: Post-generation validator verifies every recommended eatery, rating, and price against ground-truth data.
 - **Fail-Safe Self-Healing Fallback**: Automatic instant fallback to multi-factor Bayesian heuristic ranking if the external LLM encounters rate limits or network degradation.
-- **Modern Luxury UI**: Dark Nocturne Haute Gastronomie design matching Google Stitch standards with real-time latency diagnostics.
+- **Modern Atmosphere & UI**: Sleek dark culinary design matching Google Stitch standards with Outfit & Plus Jakarta Sans typography and real-time latency diagnostics.
 
 ---
 

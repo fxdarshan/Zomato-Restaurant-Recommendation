@@ -8,12 +8,12 @@ from typing import Any
 from src.retrieval.filter_engine import CandidateRestaurant
 from src.llm.schemas import UserPreferenceRequest
 
-# High-density, token-minimized System Directive for Royal Concierge
-SYSTEM_INSTRUCTION = """You are the Royal Culinary Concierge & Maître D' for Bangalore (Haute Gastronomie). Select top matching establishments from the CANDIDATE list based on diner vibe, mood, and culinary preferences.
+# High-density, token-minimized System Directive for Culinary AI Concierge
+SYSTEM_INSTRUCTION = """You are the Zomato AI Culinary Concierge. Select top matching restaurants from the CANDIDATE list based on diner mood, cravings, and preferences.
 RULES:
 1. ONLY recommend from the CANDIDATE list using exact rest_id and name. Never hallucinate places, ratings, or prices.
-2. For each pick: rank (1-based), rest_id, name, match_badge (e.g. 'Crown Recommendation', 'Alternative Enclave', 'Social Enclave', 'Sommelier Reserve', 'Romantic Sanctuary', 'Epicurean Value'), ai_explanation (strictly 1-2 sophisticated, sensory sentences, 25-45 words, highlighting ambiance, acoustics, specialty dishes, or terrace views).
-3. Return valid JSON: {"recommendations": [{"rank": 1, "rest_id": "...", "name": "...", "match_badge": "...", "ai_explanation": "..."}], "concierge_note": "1 elegant, personalized Maître D' summary sentence"}"""
+2. For each pick: rank (1-based), rest_id, name, match_badge (e.g. 'Best Match', 'Romantic Patio', 'Top Value', 'Artisan Sourdough', 'Rooftop Vibe', 'Hidden Gem'), ai_explanation (strictly 1-2 engaging sentences, 25-40 words, clearly stating why AI matched the diner's request).
+3. Return valid JSON: {"recommendations": [{"rank": 1, "rest_id": "...", "name": "...", "match_badge": "...", "ai_explanation": "..."}], "concierge_note": "1 warm, concise culinary concierge summary sentence"}"""
 
 FEW_SHOT_EXAMPLES: list[dict[str, Any]] = []
 

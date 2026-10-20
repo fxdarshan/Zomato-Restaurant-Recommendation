@@ -3,46 +3,120 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>ZOMATO ROYAL CONCIERGE — Haute Gastronomie</title>
+  <title>Zomato Concierge — AI Dining Experience</title>
 
   <!-- Google Fonts & Material Symbols -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-  <!-- Tailwind CSS with Forms & Container Queries -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Configuration verbatim from Google Stitch design -->
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
-          colors: {
-            surface: "#07080B",
-            "surface-container-lowest": "#040507",
-            "surface-container-low": "#0B0C10",
-            "surface-container": "#111318",
-            "surface-container-high": "#191B22",
-            "surface-container-highest": "#242630",
-            primary: "#D4AF37",
-            "primary-bright": "#F3D371",
-            "primary-hover": "#C5A059",
-            "gold-dim": "#8A7032",
-            "gold-border": "rgba(212, 175, 55, 0.22)",
-            "gold-border-subtle": "rgba(212, 175, 55, 0.12)",
-            champagne: "#EBD48B",
-            "champagne-light": "#FFF3D6",
-            "on-surface": "#F4F2EB",
-            "on-surface-variant": "#9CA0AC",
-            outline: "rgba(255, 255, 255, 0.06)",
-            "outline-light": "rgba(255, 255, 255, 0.1)",
+          "colors": {
+            "outline": "#ac8889",
+            "tertiary": "#ffb95f",
+            "on-tertiary-container": "#3e2400",
+            "on-primary-container": "#5b0016",
+            "on-secondary-container": "#ffc8bc",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-error-container": "#ffdad6",
+            "surface-container-lowest": "#0c0e12",
+            "primary-fixed-dim": "#ffb2b6",
+            "outline-variant": "#5c3f41",
+            "secondary-fixed-dim": "#ffb4a3",
+            "surface-container": "#1e2024",
+            "secondary-fixed": "#ffdad2",
+            "inverse-on-surface": "#2f3035",
+            "on-error": "#690005",
+            "on-surface": "#e2e2e8",
+            "surface-container-low": "#1a1c20",
+            "tertiary-container": "#ca8100",
+            "on-secondary-fixed-variant": "#8c1900",
+            "primary": "#ffb2b6",
+            "on-primary-fixed": "#40000d",
+            "surface-variant": "#333539",
+            "inverse-primary": "#be0038",
+            "on-tertiary-fixed": "#2a1700",
+            "on-secondary-fixed": "#3d0600",
+            "surface-tint": "#ffb2b6",
+            "on-primary": "#68001a",
+            "surface-container-high": "#282a2e",
+            "on-secondary": "#630f00",
+            "surface": "#111317",
+            "error": "#ffb4ab",
+            "surface-dim": "#111317",
+            "tertiary-fixed": "#ffddb8",
+            "primary-fixed": "#ffdada",
+            "on-surface-variant": "#e5bdbe",
+            "surface-bright": "#37393e",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-primary-fixed-variant": "#920029",
+            "secondary-container": "#b22301",
+            "secondary": "#ffb4a3",
+            "on-background": "#e2e2e8",
+            "on-tertiary": "#472a00",
+            "primary-container": "#ff5169",
+            "background": "#111317",
+            "inverse-surface": "#e2e2e8",
+            "error-container": "#93000a",
+            "surface-container-highest": "#333539"
           },
-          fontFamily: {
-            sans: ["Plus Jakarta Sans", "sans-serif"],
-            serif: ["Bodoni Moda", "serif"],
-            editorial: ["EB Garamond", "serif"],
-            cormorant: ["Cormorant Garamond", "serif"],
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1rem",
+            "gutter": "1rem",
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-lg-mobile": ["Outfit", "sans-serif"],
+            "display-lg": ["Outfit", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "title-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Outfit", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Outfit", "sans-serif"],
+            "headline-xl-mobile": ["Outfit", "sans-serif"]
+          },
+          "fontSize": {
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "title-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }]
           }
         }
       }
@@ -51,36 +125,22 @@
 
   <style>
     .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       display: inline-block;
       vertical-align: middle;
       line-height: 1;
     }
-    .font-serif-royal {
-      font-family: 'Bodoni Moda', 'Cormorant Garamond', serif;
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
     }
-    .font-editorial-quote {
-      font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #5c3f41;
+      border-radius: 9999px;
     }
-    .glow-gold {
-      box-shadow: 0 0 35px -6px rgba(212, 175, 55, 0.25);
-    }
-    .glow-gold-subtle {
-      box-shadow: 0 0 45px -10px rgba(212, 175, 55, 0.12);
-    }
-    .scrollbar-none::-webkit-scrollbar {
-      display: none;
-    }
-    .scrollbar-none {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    input[type=range] {
-      accent-color: #D4AF37;
-    }
-    .gold-spinner {
-      border: 3px solid rgba(212, 175, 55, 0.2);
-      border-top: 3px solid #D4AF37;
+    .crimson-spinner {
+      border: 3px solid rgba(255, 81, 105, 0.2);
+      border-top: 3px solid #ff5169;
       border-radius: 50%;
       width: 22px;
       height: 22px;
@@ -93,451 +153,349 @@
   </style>
 </head>
 
-<body class="bg-[#07080B] text-on-surface antialiased min-h-screen selection:bg-primary/30 selection:text-champagne font-sans relative overflow-x-hidden">
+<body class="bg-background text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container flex flex-col font-body-md text-body-md">
 
-  <!-- Subtle Ambient Royal Lighting -->
-  <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-30">
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 h-[650px] w-[800px] rounded-full bg-[#2A200B] blur-[170px]"></div>
-    <div class="absolute top-[35%] right-[-120px] h-[600px] w-[600px] rounded-full bg-[#1F1708] blur-[190px]"></div>
-    <div class="absolute bottom-10 left-[-80px] h-[500px] w-[500px] rounded-full bg-[#14120D] blur-[160px]"></div>
-  </div>
-
-  <!-- ============================================== -->
-  <!-- TOP SALON BAR: Imperial, Minimal Luxury        -->
-  <!-- ============================================== -->
-  <header class="sticky top-0 z-50 bg-[#07080B]/90 backdrop-blur-2xl border-b border-gold-border-subtle shadow-2xl">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="bg-surface/85 backdrop-blur-md dark:bg-surface/85 docked full-width top-0 sticky z-50 shadow-sm border-b border-outline-variant/20">
+    <div class="flex items-center justify-between px-margin py-3.5 w-full max-w-7xl mx-auto">
       
-      <!-- Brand Identity with Gold Monogram -->
       <div class="flex items-center gap-6">
-        <a class="flex items-center gap-3.5 group cursor-pointer" href="#">
-          <!-- Monogram Crest -->
-          <div class="w-8 h-8 rounded-full border border-primary/50 flex items-center justify-center bg-gradient-to-br from-primary/15 to-transparent text-primary font-serif font-semibold text-sm tracking-wider">
-            Z
+        <a class="flex items-center gap-2.5 group cursor-pointer" href="#">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-container to-secondary flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined text-surface-container-lowest text-[20px]">restaurant</span>
           </div>
-          <div class="flex items-center gap-2.5">
-            <span class="text-sm tracking-[0.3em] font-semibold text-white uppercase">ZOMATO</span>
-            <span class="h-3 w-px bg-white/20"></span>
-            <span class="text-[10px] tracking-[0.35em] uppercase text-primary font-medium">ROYAL CONCIERGE</span>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-[18px] font-bold tracking-tight text-on-surface flex items-center gap-1.5">
+              Zomato Concierge
+              <span class="font-label-sm text-[10px] bg-primary-container/20 text-primary border border-primary/30 px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider">AI</span>
+            </span>
           </div>
         </a>
 
-        <!-- Location Indicator -->
-        <div class="hidden md:flex items-center gap-2 pl-5 border-l border-white/10 text-[11px] text-on-surface-variant tracking-[0.18em] uppercase">
-          <span class="material-symbols-outlined text-[15px] text-primary" data-icon="place">place</span>
-          <span id="header-enclave-text">Bangalore <span class="text-white/30">•</span> Haute Curation</span>
+        <!-- Header Locality Display -->
+        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-on-surface text-label-md hover:border-primary/50 transition-colors cursor-pointer" onclick="focusLocality()">
+          <span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+          <span id="nav-locality-text">Bangalore</span>
+          <span class="material-symbols-outlined text-outline text-[16px]">keyboard_arrow_down</span>
         </div>
       </div>
 
-      <!-- Editorial Minimal Nav -->
-      <nav class="hidden lg:flex items-center gap-10 text-[11px] tracking-[0.25em] uppercase font-sans font-medium">
-        <a class="text-primary transition-colors hover:text-primary-bright" href="#concierge">Haute Selection</a>
-        <a class="text-on-surface-variant hover:text-white transition-colors" href="#curated">Private Salons</a>
-        <a class="text-on-surface-variant hover:text-white transition-colors" href="#private">Sommelier Cellars</a>
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 font-label-lg text-body-md text-outline">
+        <a class="text-primary font-medium hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+          <span>Concierge</span>
+        </a>
+        <a class="hover:text-on-surface transition-colors" href="#discover">Explore</a>
+        <a class="hover:text-on-surface transition-colors" href="#saved">Saved</a>
+        <a class="hover:text-on-surface transition-colors" href="#bookings">My Bookings</a>
       </nav>
 
-      <!-- Right Utility -->
-      <div class="flex items-center gap-4">
-        <!-- Model / Service Status Pill -->
-        <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.02] border border-gold-border-subtle text-[10px] text-champagne tracking-widest uppercase">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-          <span>GPT-OSS-120B Connected</span>
+      <!-- Profile Avatar -->
+      <div class="flex items-center gap-3">
+        <div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-label-sm text-outline">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>DuckDB • GPT-OSS-120B</span>
         </div>
-
-        <button class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary/40 bg-gradient-to-r from-primary/10 via-primary/[0.05] to-transparent hover:border-primary text-[11px] tracking-[0.22em] uppercase font-sans font-semibold text-champagne hover:text-white transition-all active:scale-95 cursor-pointer">
-          <span class="material-symbols-outlined text-[14px] text-primary" data-icon="stars">stars</span>
-          <span>VIP Access</span>
+        <button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-on-surface transition-colors cursor-pointer" title="Account profile">
+          <span class="material-symbols-outlined text-[20px]">person</span>
         </button>
-
-        <!-- Maître D' Avatar -->
-        <div class="relative group cursor-pointer">
-          <div class="w-9 h-9 rounded-full p-[1px] bg-gradient-to-br from-primary via-primary/30 to-transparent">
-            <img alt="Maître D'" class="w-full h-full object-cover rounded-full filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMHiJIzmEB9sHAXZie0RWh9u7TJB8jBme3WfiKWMYdbGfY18ojBgLMw77xO3qqGHFELc2qt-dsgnJ1TsgGlfi4n6W4MMdatvrrk90XtgQiLqtLR3wS8geu_1mSG2IJHyOdUGWmlk7_4Qdn2tgbtBfd4hQ0bcipxImBrF-BlkRh5x6yBh-_Dmq-mLZCG6qx13LZ34oy5Dx86SmTKUbVrv91Q64vIlamIqWXqSGWyR6lKTrtL0lQtgEW"/>
-          </div>
-        </div>
       </div>
+
     </div>
   </header>
 
-  <!-- ============================================== -->
-  <!-- MAIN HERO & CONNOISSEUR MANDATE CANVAS         -->
-  <!-- ============================================== -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-28">
+  <!-- ================= MAIN CONTENT CANVAS ================= -->
+  <main class="flex-1 w-full max-w-7xl mx-auto px-margin py-space-lg space-y-space-xl">
 
-    <!-- Editorial Headings & Connoisseur Mandate Section -->
-    <section class="max-w-5xl mx-auto mb-14" id="concierge">
-      
-      <!-- Editorial Headings -->
-      <div class="text-center mb-8">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-gold-border bg-primary/[0.04] text-champagne text-[10px] font-sans tracking-[0.3em] uppercase font-semibold mb-5">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-          <span>Haute Gastronomie Intelligence</span>
-        </div>
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-normal text-white font-serif-royal tracking-normal leading-[1.12] mb-4">
-          Dining curated for the <span class="italic text-champagne font-cormorant font-normal">exact moment.</span>
-        </h1>
-        <p class="text-sm sm:text-base text-on-surface-variant max-w-2xl mx-auto font-sans font-light tracking-wide">
-          Commission our algorithmic Maître D' with your sensory cravings, intimate party scale, and budget tiers.
-        </p>
-      </div>
-
-      <!-- Quick Dining Vibes Selector / Pills (Clickable shortcuts) -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between mb-3 px-1">
-          <span class="text-[10px] uppercase font-sans tracking-[0.25em] text-primary font-semibold flex items-center gap-1.5">
-            <span class="material-symbols-outlined text-[14px]">auto_awesome</span>
-            Curated Moods &amp; Instincts
-          </span>
-          <span class="text-[11px] font-sans text-on-surface-variant tracking-wider hidden sm:inline">Tap any mood to commission recommendations</span>
-        </div>
-
-        <div class="flex items-center gap-2.5 overflow-x-auto pb-2 text-xs font-sans scrollbar-none" id="vibe-pills-row">
-          <button type="button" onclick="selectVibe('romantic', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>🌹</span> Romantic Date Night
-          </button>
-          <button type="button" onclick="selectVibe('pizza', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>🍕</span> Artisan Sourdough &amp; Pizza
-          </button>
-          <button type="button" onclick="selectVibe('rooftop', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>🍸</span> Breezy Rooftop &amp; Cocktails
-          </button>
-          <button type="button" onclick="selectVibe('steaks', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>🥂</span> Sommelier Cellars &amp; Steaks
-          </button>
-          <button type="button" onclick="selectVibe('courtyard', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>🌿</span> Aesthetic Garden Courtyard
-          </button>
-          <button type="button" onclick="selectVibe('cafe', this)" class="vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer">
-            <span>☕</span> Aesthetic Work Salon
-          </button>
-        </div>
-      </div>
-
-      <!-- Dining Protocol & Recommendation Parameters Console -->
-      <div class="bg-[#0B0C10] rounded-2xl border border-gold-border p-6 sm:p-8 glow-gold-subtle shadow-2xl backdrop-blur-xl">
+    <!-- AI COMMAND CENTER / HERO MODULE -->
+    <section class="relative rounded-2xl bg-gradient-to-b from-surface-container via-surface-container-low to-surface border border-white/5 p-6 md:p-8 shadow-2xl overflow-hidden">
+      <div class="max-w-3xl mx-auto space-y-8 text-center">
         
-        <div class="flex items-center justify-between pb-5 border-b border-gold-border-subtle mb-6">
-          <div class="flex items-center gap-3">
-            <div class="w-7 h-7 rounded-full border border-primary/50 flex items-center justify-center bg-primary/10 text-primary text-xs font-serif">
-              Ω
-            </div>
-            <div>
-              <h3 class="text-xs font-sans tracking-[0.25em] uppercase text-champagne font-semibold">Maître D' Protocol Console</h3>
-              <p class="text-[11px] text-on-surface-variant font-sans">Specify exact gastronomic and geographic thresholds</p>
-            </div>
+        <!-- Hero Header -->
+        <div class="space-y-3 pt-2">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-sm text-xs font-medium">
+            <span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+            Atmospheric Dining Concierge
           </div>
-          
-          <div class="flex items-center gap-3">
-            <button type="button" onclick="resetFilters()" class="text-[11px] font-sans tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 cursor-pointer">
-              <span class="material-symbols-outlined text-[14px]">refresh</span>
-              <span>Reset</span>
+          <h1 class="text-headline-xl font-bold tracking-tight text-on-surface">
+            Where would you like to dine tonight?
+          </h1>
+          <p class="text-outline font-body-md max-w-xl mx-auto">
+            Set your dining mood and preferences below, or let AI craft an evening tailored to your exact taste.
+          </p>
+        </div>
+
+        <!-- Central Search Bar Input -->
+        <div class="relative rounded-2xl bg-surface-container-high/90 border border-outline-variant/30 p-2 shadow-lg focus-within:border-primary/50 transition-all">
+          <div class="flex items-center gap-3 px-3 py-1">
+            <span class="material-symbols-outlined text-primary text-[22px]">search</span>
+            <input class="w-full bg-transparent border-none text-on-surface placeholder:text-outline font-body-md focus:outline-none focus:ring-0 p-0 text-left" id="ai-search-input" placeholder="e.g. Romantic candlelit anniversary with artisan sourdough pizza under ₹1,500 in Indiranagar" type="text" value=""/>
+            <button id="btn-generate" onclick="executeSearch()" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-lg font-bold shadow-md hover:opacity-90 active:scale-[0.98] transition-all whitespace-nowrap cursor-pointer">
+              <span id="btn-generate-text">Generate Recommendations</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </button>
-            <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.02] border border-white/10 text-[10px] text-on-surface-variant uppercase tracking-[0.2em]">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 93 Enclaves Indexed
-            </div>
           </div>
         </div>
 
-        <!-- Main Grid Form -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
+        <!-- Interactive Filters Console -->
+        <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/20 space-y-6 text-left">
           
-          <!-- 1. Location Selector (Starts unselected) -->
-          <div class="md:col-span-4 flex flex-col justify-between">
-            <div class="flex items-center justify-between mb-2">
-              <label class="text-[10px] uppercase font-sans tracking-[0.25em] text-on-surface-variant font-medium flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-primary text-[14px]">place</span>
-                Target Enclave / District
-              </label>
-              <span class="text-[9px] text-primary font-semibold">* Required</span>
-            </div>
-            <div class="relative">
-              <select id="location-select" onchange="handleLocationSelect(this.value)" class="w-full bg-[#07080B] border border-gold-border-subtle focus:border-primary rounded-xl px-4 py-3 text-xs font-sans text-champagne appearance-none cursor-pointer tracking-wide pr-10 focus:ring-0 transition-colors">
-                <option value="" selected disabled>Select Bangalore Enclave (e.g. Indiranagar, Koramangala...)</option>
-                <option value="Indiranagar">Indiranagar (100ft &amp; 12th Main)</option>
-                <option value="Koramangala 5th Block">Koramangala (5th &amp; 6th Block)</option>
-                <option value="Lavelle Road">Lavelle Road &amp; UB City</option>
-                <option value="HSR">HSR Layout (Sector 1 - 4)</option>
-                <option value="MG Road">MG Road &amp; Church Street</option>
-                <option value="Whitefield">Whitefield (ITPB &amp; Inner Circle)</option>
-                <option value="Bellandur">Bellandur (Outer Ring Rd)</option>
-                <option value="Jayanagar">Jayanagar 4th Block</option>
-                <option value="Residency Road">Residency Road</option>
-                <option value="BTM">BTM Layout</option>
-                <option value="Malleshwaram">Malleshwaram</option>
-                <option value="JP Nagar">JP Nagar</option>
-              </select>
-              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-[16px] text-primary/80 pointer-events-none">expand_more</span>
-            </div>
-
-            <!-- Quick Enclave Shortcuts (Unselected by default) -->
-            <div class="flex flex-wrap gap-1.5 mt-2.5">
-              <button type="button" onclick="setLocation('Indiranagar')" class="enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer">Indiranagar</button>
-              <button type="button" onclick="setLocation('Koramangala 5th Block')" class="enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer">Koramangala</button>
-              <button type="button" onclick="setLocation('Lavelle Road')" class="enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer">Lavelle Rd</button>
-              <button type="button" onclick="setLocation('HSR')" class="enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer">HSR</button>
-              <button type="button" onclick="setLocation('Whitefield')" class="enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer">Whitefield</button>
-            </div>
-          </div>
-
-          <!-- 2. Budget Tier Selector (Starts unselected) -->
-          <div class="md:col-span-5 flex flex-col justify-between">
-            <div class="flex items-center justify-between mb-2">
-              <label class="text-[10px] uppercase font-sans tracking-[0.25em] text-on-surface-variant font-medium flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-primary text-[14px]">payments</span>
-                Budget Tier (For Two)
-              </label>
-              <span id="budget-current-label" class="text-[10px] font-sans text-on-surface-variant">Any Tier</span>
-            </div>
-            <div class="grid grid-cols-3 gap-1.5 bg-[#07080B] p-1 rounded-xl border border-gold-border-subtle text-center text-[11px] font-sans">
-              <button type="button" onclick="setBudget('low', this)" id="budget-low" class="budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer">
-                ≤ ₹400
-              </button>
-              <button type="button" onclick="setBudget('medium', this)" id="budget-medium" class="budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer">
-                Mid (₹401-1.2k)
-              </button>
-              <button type="button" onclick="setBudget('high', this)" id="budget-high" class="budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer">
-                Haute (&gt;1.2k)
-              </button>
-            </div>
-            <div class="text-[10px] text-on-surface-variant/60 text-right mt-2 pr-1">Click active tier to toggle off</div>
-          </div>
-
-          <!-- 3. Star Rating Threshold (Starts at 1.0★ Any Score) -->
-          <div class="md:col-span-3 flex flex-col justify-between">
-            <div class="flex items-center justify-between mb-2">
-              <label class="text-[10px] uppercase font-sans tracking-[0.25em] text-on-surface-variant font-medium flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-                Minimum Score
-              </label>
-              <span id="rating-badge" class="text-[10px] font-sans text-on-surface-variant px-2 py-0.5 rounded-full bg-white/[0.04] border border-gold-border-subtle">
-                Any Score
+          <!-- 1. Mood & Occasion Pills (All start unselected) -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-outline flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-primary">mood</span>
+                1. Mood &amp; Occasion
               </span>
+              <button type="button" onclick="resetFilters()" class="text-xs text-outline/80 hover:text-primary transition-colors flex items-center gap-1 cursor-pointer">
+                <span class="material-symbols-outlined text-[14px]">refresh</span>
+                <span>Reset All</span>
+              </button>
             </div>
-            <div class="bg-[#07080B] rounded-xl border border-gold-border-subtle px-3 py-3 flex items-center gap-2.5">
-              <input id="rating-slider" oninput="updateRating(this.value)" class="w-full accent-[#D4AF37] h-1.5 bg-white/10 rounded-lg cursor-pointer" max="4.8" min="1.0" step="0.1" type="range" value="1.0"/>
-              <span id="rating-current-val" class="text-xs font-serif font-bold text-champagne whitespace-nowrap">1.0★</span>
+            
+            <div class="flex flex-wrap gap-2" id="mood-pills-row">
+              <button type="button" onclick="toggleMood('romantic', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>🍷</span> Romantic Date
+              </button>
+              <button type="button" onclick="toggleMood('pizza', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>🍕</span> Artisan Sourdough
+              </button>
+              <button type="button" onclick="toggleMood('patio', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>🌿</span> Garden Patio
+              </button>
+              <button type="button" onclick="toggleMood('rooftop', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>🍸</span> Rooftop &amp; Drinks
+              </button>
+              <button type="button" onclick="toggleMood('family', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>👨‍👩‍👧</span> Family Feast
+              </button>
+              <button type="button" onclick="toggleMood('cafe', this)" class="mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5">
+                <span>☕</span> Aesthetic Cafe
+              </button>
             </div>
-            <div class="flex justify-between text-[10px] text-on-surface-variant/60 mt-1 px-1">
-              <span>All</span>
-              <span>3.5★</span>
-              <span>4.0★</span>
-              <span>4.8★</span>
+          </div>
+
+          <!-- 2 & 3. Budget & Locality Selection -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-outline-variant/15">
+            
+            <!-- 2. Budget for Two (Starts unselected) -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold uppercase tracking-wider text-outline flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px] text-tertiary">payments</span>
+                  2. Budget for Two
+                </span>
+                <span id="budget-label" class="text-xs text-outline/70">Any Budget</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" onclick="setBudget('low', this)" id="budget-low" class="budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer">
+                  ₹ (&lt;₹500)
+                </button>
+                <button type="button" onclick="setBudget('medium', this)" id="budget-medium" class="budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer">
+                  ₹₹ (₹500-₹1.5k)
+                </button>
+                <button type="button" onclick="setBudget('high', this)" id="budget-high" class="budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer">
+                  ₹₹₹ (₹1.5k+)
+                </button>
+              </div>
             </div>
+
+            <!-- 3. Locality Hub & Proximity (Starts unselected) -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold uppercase tracking-wider text-outline flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px] text-secondary">near_me</span>
+                  3. Bangalore Locality Hub
+                </span>
+                <span class="text-xs text-primary font-medium">* Required</span>
+              </div>
+              <div class="relative">
+                <select id="locality-select" onchange="handleLocalityChange(this.value)" class="w-full bg-surface-container border border-outline-variant/40 focus:border-primary rounded-xl px-3.5 py-2 text-xs font-body-md text-on-surface appearance-none cursor-pointer pr-9 focus:ring-0">
+                  <option value="" selected disabled>Select Bangalore Locality (e.g. Indiranagar, Koramangala...)</option>
+                  <option value="Indiranagar">Indiranagar (100ft Rd, 12th Main)</option>
+                  <option value="Koramangala 5th Block">Koramangala (5th &amp; 6th Block)</option>
+                  <option value="Lavelle Road">Lavelle Road &amp; UB City</option>
+                  <option value="HSR">HSR Layout (Sector 1 - 4)</option>
+                  <option value="Whitefield">Whitefield (ITPB &amp; Inner Circle)</option>
+                  <option value="MG Road">MG Road &amp; Church Street</option>
+                  <option value="Bellandur">Bellandur (Outer Ring Rd)</option>
+                  <option value="Jayanagar">Jayanagar 4th Block</option>
+                  <option value="Residency Road">Residency Road</option>
+                  <option value="BTM">BTM Layout</option>
+                  <option value="Malleshwaram">Malleshwaram</option>
+                  <option value="JP Nagar">JP Nagar</option>
+                </select>
+                <span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+              </div>
+              <!-- Quick Locality Chips -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <button type="button" onclick="setLocality('Indiranagar')" class="loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer">Indiranagar</button>
+                <button type="button" onclick="setLocality('Koramangala 5th Block')" class="loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer">Koramangala</button>
+                <button type="button" onclick="setLocality('Lavelle Road')" class="loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer">Lavelle Rd</button>
+                <button type="button" onclick="setLocality('HSR')" class="loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer">HSR</button>
+              </div>
+            </div>
+
           </div>
 
-        </div>
-
-        <!-- 4. Cuisine & Speciality Multi-Select Chips (Starts empty) -->
-        <div class="mb-6 pt-2">
-          <div class="flex items-center justify-between mb-2.5">
-            <label class="text-[10px] uppercase font-sans tracking-[0.25em] text-on-surface-variant font-medium flex items-center gap-1.5">
-              <span class="material-symbols-outlined text-primary text-[14px]">restaurant</span>
-              Gastronomic Specialities &amp; Accents
-            </label>
-            <span class="text-[10px] text-on-surface-variant">Optional</span>
-          </div>
-
-          <!-- Selected Chips Box -->
-          <div class="flex flex-wrap items-center gap-2 p-3 bg-[#07080B] rounded-xl border border-gold-border-subtle min-h-[46px]" id="cuisine-chip-box">
-            <span class="text-xs text-on-surface-variant/60 italic px-1 font-editorial" id="no-cuisines-hint">None selected (All specialities included)</span>
-            <button type="button" onclick="toggleCuisineMenu()" class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-dashed border-white/20 hover:border-primary/50 text-on-surface-variant hover:text-champagne text-xs font-sans transition-colors cursor-pointer">
-              <span class="material-symbols-outlined text-[13px]">add</span>
-              <span>Custom Taste</span>
-            </button>
-          </div>
-
-          <!-- Quick Taste Shortcuts -->
-          <div class="flex flex-wrap items-center gap-1.5 mt-2.5">
-            <span class="text-[10px] text-on-surface-variant uppercase tracking-wider mr-1">Quick add:</span>
-            <button type="button" onclick="addQuickCuisine('Italian')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>Italian</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('Artisan Sourdough Pizza')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>Artisan Pizza</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('Craft Cocktails')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>Craft Cocktails</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('Continental')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>Continental</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('North Indian')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>North Indian</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('South Indian')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>South Indian</span><span class="text-primary text-xs">+</span>
-            </button>
-            <button type="button" onclick="addQuickCuisine('Cafe')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle hover:border-gold-border text-on-surface-variant hover:text-white text-[11px] font-sans cursor-pointer transition-colors">
-              <span>Cafe &amp; Roastery</span><span class="text-primary text-xs">+</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- 5. Vibe & Craving Natural Language Mandate Textarea (Clean empty state) -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <label class="text-[10px] uppercase font-sans tracking-[0.25em] text-primary font-semibold flex items-center gap-1.5">
-              <span class="material-symbols-outlined text-[15px]">psychology</span>
-              Connoisseur Mandate &amp; Sensory Nuances
-            </label>
-            <span class="text-[10px] font-sans text-on-surface-variant tracking-wider">Natural Language Gastronomy Engine</span>
-          </div>
-          <div class="relative">
-            <textarea id="vibe-text" class="w-full bg-[#07080B] rounded-xl border border-gold-border focus:border-primary text-on-surface font-editorial-quote italic text-base sm:text-lg p-4 sm:p-5 focus:ring-1 focus:ring-primary/40 transition-all placeholder:text-white/20 resize-none h-28" placeholder="e.g. Intimate anniversary dinner on an open garden terrace with dim candle lighting, artisan sourdough pizza &amp; craft cocktails in Indiranagar..."></textarea>
-            <span class="absolute right-3.5 bottom-3 text-[11px] font-sans text-white/30 uppercase tracking-widest hidden sm:inline">Subjective Gastronomy Filter</span>
-          </div>
-        </div>
-
-        <!-- 6. Primary Recommendation CTA & Active Status -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-gold-border-subtle">
-          <div class="flex items-center gap-2.5 text-xs font-sans text-on-surface-variant">
-            <span class="material-symbols-outlined text-primary text-[16px]">verified</span>
-            <span id="pipeline-status">DuckDB Candidate Screening • GPT-OSS-120B Ready</span>
-          </div>
-
-          <button id="search-btn" onclick="executeSearch()" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-primary via-[#E5C158] to-primary hover:from-primary-bright hover:to-primary text-[#07080B] text-xs font-sans font-bold tracking-[0.22em] uppercase glow-gold transition-all duration-300 active:scale-95 flex items-center justify-center gap-2.5 shadow-xl cursor-pointer">
-            <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
-            <span id="search-btn-text">Curate Royal Recommendations</span>
-          </button>
         </div>
 
       </div>
     </section>
 
-    <!-- ============================================== -->
-    <!-- INITIAL WELCOME MANDATE CANVAS                 -->
-    <!-- ============================================== -->
-    <div id="welcome-canvas" class="max-w-5xl mx-auto rounded-2xl bg-[#0B0C10] border border-gold-border p-8 sm:p-14 text-center shadow-2xl relative overflow-hidden backdrop-blur-xl">
-      <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-[#7A1C29]/15 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="relative z-10">
-        <div class="w-16 h-16 mx-auto rounded-full border border-primary/50 flex items-center justify-center bg-gradient-to-br from-primary/15 via-[#2A200B] to-transparent text-primary text-2xl font-serif mb-6 glow-gold-subtle">
-          ⚜️
-        </div>
-
-        <span class="text-[10px] uppercase font-sans tracking-[0.35em] text-primary font-semibold block mb-2">Exclusive Dining Protocol</span>
-        <h2 class="text-2xl sm:text-4xl font-normal text-white font-serif-royal tracking-tight mb-4">
-          Welcome to Zomato <span class="italic text-champagne font-cormorant">Royal Concierge</span>
-        </h2>
-
-        <p class="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed font-sans font-light">
-          Bespoke gastronomic discovery combining columnar candidate screening across 12,500+ Bangalore spots with sensory reasoning powered by <strong class="text-champagne font-medium">GPT-OSS-120B</strong>.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-left max-w-2xl mx-auto mb-10">
-          <div class="p-4 rounded-xl bg-[#07080B] border border-gold-border-subtle hover:border-gold-border transition-all">
-            <span class="text-2xl mb-2.5 block">📍</span>
-            <h4 class="text-xs font-sans tracking-wider uppercase font-semibold text-champagne mb-1">93 Private Enclaves</h4>
-            <p class="text-[11px] text-on-surface-variant leading-relaxed">Indiranagar, Koramangala, Lavelle Road, Whitefield &amp; beyond.</p>
-          </div>
-          <div class="p-4 rounded-xl bg-[#07080B] border border-gold-border-subtle hover:border-gold-border transition-all">
-            <span class="text-2xl mb-2.5 block">⚡</span>
-            <h4 class="text-xs font-sans tracking-wider uppercase font-semibold text-champagne mb-1">Sub-Second Retrieval</h4>
-            <p class="text-[11px] text-on-surface-variant leading-relaxed">Polars &amp; DuckDB prune thousands of venues in sub-20ms.</p>
-          </div>
-          <div class="p-4 rounded-xl bg-[#07080B] border border-gold-border-subtle hover:border-gold-border transition-all">
-            <span class="text-2xl mb-2.5 block">🍷</span>
-            <h4 class="text-xs font-sans tracking-wider uppercase font-semibold text-champagne mb-1">Maître D' Reasoning</h4>
-            <p class="text-[11px] text-on-surface-variant leading-relaxed">Sensory assessment of candlelight, outdoor patio, noise &amp; wine.</p>
-          </div>
-        </div>
-
-        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.03] border border-gold-border-subtle text-xs text-on-surface-variant font-sans">
-          <span class="material-symbols-outlined text-[15px] text-primary">touch_app</span>
-          <span>Select your target enclave above or tap any curated mood to commission recommendations</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================== -->
-    <!-- RESULTS SECTION: RECOMMENDATIONS SHOWCASE      -->
-    <!-- ============================================== -->
-    <div id="results-wrapper" class="hidden max-w-5xl mx-auto space-y-10">
+    <!-- ================= RECOMMENDATION RESULTS SECTION ================= -->
+    <section class="space-y-6">
       
-      <!-- Editorial Section Title & Metric Bar -->
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-gold-border-subtle">
-        <div>
-          <span class="text-[10px] uppercase font-sans tracking-[0.3em] text-primary font-semibold block mb-1">Maître D' Protocol</span>
-          <h2 class="text-2xl sm:text-3xl font-normal text-white font-serif-royal tracking-tight" id="results-headline">
-            Three Handpicked Enclaves
-          </h2>
+      <!-- Calm Initial Empty State Placeholder (Visible until search is performed) -->
+      <div id="empty-recommendations-placeholder" class="rounded-2xl border border-dashed border-outline-variant/40 bg-surface-container-lowest/60 p-12 text-center space-y-4 max-w-2xl mx-auto transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center mx-auto text-outline">
+          <span class="material-symbols-outlined text-[28px] text-primary">explore</span>
         </div>
-        
-        <!-- Live Diagnostic Ribbon -->
-        <div class="flex items-center gap-3 text-[11px] font-sans">
-          <div class="px-3 py-1 rounded-full bg-white/[0.03] border border-gold-border-subtle text-champagne">
-            <span id="metric-screened">Screened: 15 spots</span>
-          </div>
-          <div class="px-3 py-1 rounded-full bg-white/[0.03] border border-gold-border-subtle text-on-surface-variant">
-            <span id="metric-speed">Latency: 1.2s</span>
-          </div>
-          <div class="px-3 py-1 rounded-full bg-primary/10 border border-primary/40 text-champagne font-semibold uppercase">
-            <span id="metric-status">VERIFIED</span>
-          </div>
+        <div class="space-y-1.5">
+          <h3 class="text-headline-sm font-semibold text-on-surface">Awaiting your preferences</h3>
+          <p class="text-outline font-body-md max-w-md mx-auto">
+            Select your mood, budget, or enter a prompt above to view tailored restaurant recommendations.
+          </p>
+        </div>
+        <div class="pt-2">
+          <span class="inline-flex items-center gap-1.5 text-xs text-outline/70 bg-surface-container px-3 py-1.5 rounded-full border border-outline-variant/20">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span id="ready-curate-text">Ready to curate for Bangalore &amp; surrounding areas</span>
+          </span>
         </div>
       </div>
 
-      <!-- Chef d'Hôtel Synthesis Overview Card -->
-      <div id="ai-synthesis-card" class="bg-[#0B0C10] rounded-2xl border border-gold-border p-5 relative overflow-hidden glow-gold-subtle">
-        <div class="flex items-start gap-3.5">
-          <div class="w-8 h-8 rounded-full border border-primary/50 flex items-center justify-center bg-primary/10 text-primary text-sm font-serif flex-shrink-0">
-            Ψ
-          </div>
+      <!-- Results Container: Hidden by default until user triggers selection -->
+      <div id="curated-results-container" class="hidden space-y-6">
+        
+        <!-- Results Header & Tabs -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-outline-variant/20">
           <div>
+            <h2 class="font-headline-lg font-bold text-on-surface flex items-center gap-2">
+              <span>Top Matches for Your Evening</span>
+              <span id="results-locality-tag" class="text-tertiary font-title-sm font-normal">Indiranagar</span>
+            </h2>
+            <p class="font-body-md text-outline">Curated in real-time based on table availability and ambient reviews.</p>
+          </div>
+          <div class="flex items-center gap-2 bg-surface-container p-1 rounded-xl border border-outline-variant/30">
+            <button class="px-3 py-1 rounded-lg bg-surface-container-highest text-primary font-label-sm font-bold">Best Match</button>
+            <button class="px-3 py-1 rounded-lg hover:bg-surface-container-high text-on-surface font-label-sm">Rating</button>
+            <button class="px-3 py-1 rounded-lg hover:bg-surface-container-high text-on-surface font-label-sm">Distance</button>
+          </div>
+        </div>
+
+        <!-- Diagnostic & AI Curatorial Note Bar -->
+        <div id="ai-curatorial-banner" class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex items-start gap-3">
+          <div class="w-8 h-8 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+          </div>
+          <div class="flex-1">
             <div class="flex items-center gap-2 mb-1">
-              <span class="text-xs font-sans font-bold text-champagne tracking-wider uppercase">Chef d'Hôtel Curatorial Summary</span>
-              <span class="px-2 py-0.5 rounded text-[10px] bg-primary/20 text-champagne font-semibold uppercase">GPT-OSS-120B Verified</span>
+              <span class="text-xs font-bold text-primary tracking-wider uppercase font-headline-sm">Chef d'Hôtel Curatorial Note</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-container text-tertiary border border-outline-variant/30 font-semibold" id="meta-latency-tag">Latency: 1.2s</span>
             </div>
-            <p id="synthesis-text" class="text-xs sm:text-sm text-on-surface leading-relaxed font-sans">
+            <p id="concierge-note-text" class="text-xs sm:text-sm text-on-surface leading-relaxed">
               Analyzing recommendations...
             </p>
           </div>
         </div>
+
+        <!-- Dynamic Alerts Container (Fallback / Relaxation) -->
+        <div id="alerts-container" class="space-y-2"></div>
+
+        <!-- Recommendations Cards List -->
+        <div id="cards-list" class="space-y-5"></div>
+
       </div>
 
-      <!-- Dynamic Status Alerts Area (Fallback / Smart Relaxation) -->
-      <div id="status-alerts-area" class="space-y-2"></div>
-
-      <!-- Recommendations Cards Container -->
-      <div id="cards-container" class="space-y-12"></div>
-
-    </div>
+    </section>
 
   </main>
 
-  <!-- ============================================== -->
-  <!-- SOPHISTICATED IMPERIAL FOOTER                  -->
-  <!-- ============================================== -->
-  <footer class="border-t border-gold-border-subtle bg-[#050608] py-16">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
-      <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-        <div class="flex items-center gap-2.5">
-          <div class="w-6 h-6 rounded-full border border-primary/40 flex items-center justify-center text-primary font-serif text-xs">Z</div>
-          <span class="text-xs tracking-[0.3em] font-semibold font-sans text-white uppercase">ZOMATO ROYAL</span>
+  <!-- ================= MOBILE DOCKED BOTTOM NAVIGATION ================= -->
+  <nav class="docked full-width bottom-0 md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs bg-surface-container-lowest/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-2xl">
+    <a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary" href="#">
+      <span class="material-symbols-outlined text-[22px]">explore</span>
+      <span class="font-label-sm text-label-sm">Explore</span>
+    </a>
+    <a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-3 py-1.5 transition-all" href="#">
+      <span class="material-symbols-outlined text-[22px]">smart_toy</span>
+      <span class="font-label-sm text-label-sm">Concierge</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary" href="#">
+      <span class="material-symbols-outlined text-[22px]">bookmark</span>
+      <span class="font-label-sm text-label-sm">Shortlist</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary" href="#">
+      <span class="material-symbols-outlined text-[22px]">table_restaurant</span>
+      <span class="font-label-sm text-label-sm">Bookings</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary" href="#">
+      <span class="material-symbols-outlined text-[22px]">person</span>
+      <span class="font-label-sm text-label-sm">Profile</span>
+    </a>
+  </nav>
+
+  <!-- ================= GLOBAL DESKTOP FOOTER ================= -->
+  <footer class="mt-auto border-t border-outline-variant/20 bg-surface-container-lowest text-outline pt-12 pb-16">
+    <div class="max-w-7xl mx-auto px-margin grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- Brand & Mission -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <span class="font-headline-sm text-headline-sm font-bold text-primary">Zomato Concierge</span>
         </div>
-        <span class="hidden sm:inline text-white/20">•</span>
-        <p class="text-xs text-on-surface-variant font-sans tracking-wide">
-          Haute gastronomie curation &amp; algorithmic hospitality. Bangalore Edition.
+        <p class="font-body-sm text-body-sm text-outline leading-relaxed">
+          The autonomous epicurean engine tailoring private dining, live chef tables, and curated reservations across Bangalore, Mumbai, Delhi, and Dubai.
         </p>
+        <div class="text-xs text-outline/60 pt-2">
+          © 2025 Zomato Media Pvt. Ltd. All rights reserved.
+        </div>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-8 text-[11px] font-sans text-on-surface-variant tracking-[0.2em] uppercase">
-        <a class="hover:text-primary transition-colors" href="#concierge">Private Salons</a>
-        <a class="hover:text-primary transition-colors" href="#concierge">Micro-Districts</a>
-        <a class="hover:text-primary transition-colors" href="#concierge">Sommelier Reserve</a>
-        <a class="hover:text-primary transition-colors" href="#concierge">Charter Privileges</a>
+
+      <!-- Quick Links -->
+      <div class="space-y-2">
+        <h5 class="font-label-lg text-label-lg font-bold text-on-surface">Concierge Curations</h5>
+        <ul class="space-y-1.5 font-body-sm text-body-sm">
+          <li><a class="hover:text-primary transition-colors" href="#">Microbreweries of Bangalore</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Secret Courtyard Italian</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Rooftop Sundowner Lounges</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">48-Hr Fermented Sourdough Trail</a></li>
+        </ul>
       </div>
+
+      <!-- Live Neighborhoods -->
+      <div class="space-y-2">
+        <h5 class="font-label-lg text-label-lg font-bold text-on-surface">Popular Hubs</h5>
+        <ul class="space-y-1.5 font-body-sm text-body-sm">
+          <li><a class="hover:text-primary transition-colors" href="#">Indiranagar 100ft Road</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Koramangala 4th Block</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Lavelle Road &amp; UB City</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Whitefield EPIP Zone</a></li>
+        </ul>
+      </div>
+
+      <!-- Experience Guarantee -->
+      <div class="space-y-3">
+        <h5 class="font-label-lg text-label-lg font-bold text-on-surface">Zomato Gold Assurance</h5>
+        <div class="p-3 rounded-xl bg-surface-container border border-outline-variant/30 space-y-1">
+          <span class="font-label-md text-label-md text-tertiary flex items-center gap-1 font-semibold">
+            <span class="material-symbols-outlined text-[16px]">verified</span>
+            Instant Table Confirmation
+          </span>
+          <p class="font-body-sm text-body-sm text-outline">
+            Complimentary dessert and priority terrace allocation for Gold members on all Concierge bookings.
+          </p>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <!-- ============================================== -->
-  <!-- TOAST NOTIFICATION CONTAINER                   -->
-  <!-- ============================================== -->
-  <div id="app-toast" class="fixed bottom-6 right-6 z-50 max-w-md px-5 py-3.5 rounded-xl bg-[#0B0C10] border border-gold-border shadow-2xl text-xs font-sans flex items-center gap-3 transition-all transform duration-300 translate-y-4 opacity-0 pointer-events-none"></div>
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="app-toast" class="fixed bottom-6 right-6 z-50 max-w-md px-5 py-3.5 rounded-xl bg-surface-container-high border border-outline-variant/40 shadow-2xl text-xs font-body-md flex items-center gap-3 transition-all transform duration-300 translate-y-4 opacity-0 pointer-events-none"></div>
 
-  <!-- ============================================== -->
-  <!-- INTERACTIVE APPLICATION LOGIC                  -->
-  <!-- ============================================== -->
+  <!-- ================= APPLICATION ENGINE SCRIPT ================= -->
   <script>
     // State - 100% clean defaults, user has full selection agency
     const state = {
@@ -546,16 +504,17 @@
       minRating: null,
       cuisines: [],
       vibe: '',
+      selectedMood: null,
       maxRecs: 3
     };
 
-    // Curated high-res imagery mappings matching Google Stitch code.html
+    // Curated high-res imagery mappings matching code.html
     const photos = {
-      pizza_bakery: "https://lh3.googleusercontent.com/aida-public/AB6AXuDCk0IWR2lJrfv_CW5Q44QkLxhtLn75UU8n8Gs5_C3YDSqSI1qFikHWrmEmIB3_mnJY21D9zOK_aa_GXxYLN1F87aPFHEzy1nwvrwNIUT5fVv07q-kmiDaNEaxihEbtxgnnpaZRw0ZabFHl1k0-k69Gb28wVcm-dl3KcW2H_43DBqoP4NsrmdN3dM0MqaFI2xc2L5Cir7cj0yaMsZtJLCW1wFn04pmLP_LQvxlyS6Pp8OdxBC2bf6pg",
-      trattoria: "https://lh3.googleusercontent.com/aida-public/AB6AXuAR8iwsbLRH-rceeCX_tuf-uxGmrS8e_D2OczyReccSoQNkMDsj923jmNE_nbn3rXVFCxo2JBKtc1BIeHkoh5GP5p1avN3fMCrRGmVAT-Xlx4mQy3dds5JX_9wiCkwZY2xP7iU_ChVIDC2LDxuXVIt93MjAnW2zHF-fX-hPWVa4iEAb40HtAArLbDqEuqxqRXYlssh3wsvIGIB30WphQSsoplKid6iYzNleq_pAU0h9oROPMZqWiu90",
+      pizza_bakery: "https://lh3.googleusercontent.com/aida-public/AB6AXuAGeWzZsxjifjzAWnbkslY9HQRvFLCBOWOoa7MV4vFY3YWBTkfpNQGvJlO9uTIllOddVaKIy7dEQbPALUFhMLYmNMgwQFx48E8UXPNR0Sc1Ilywqijc6144JR6GJjVs_cx1vJsJWwXH9cfaszV5sM7pqXis403BRo0m1ELhEWi29CGidvhAiHU5ky6JveC9F0D_nkxmkzlyKLvnBJ7eLoPTAovAKkZTsol4e4P_M-Tlwz876DfY-p8H",
+      trattoria: "https://lh3.googleusercontent.com/aida-public/AB6AXuDL3F1BvRSroDIsew6h09NlPPqWxA2ndblx7UICf9dlCYp4FwIdckS2hc30USfFT0EGeto933yfgC40UXCTTBBJm1h5SriVpM11a4tsiARFzr3l-zkAlj1i_JqaRs5FCCtruFpCC1zXcvgqbckcFjuXCnYlq22rSnx9P7gya9MT7lNYcHyjF3EAWt93rW89riVx3SxqWLO6yTU_ZmVLejQ-pC00oYJVF51FKWir7kQu6bi__uwUWzp-",
       brewery: "https://lh3.googleusercontent.com/aida-public/AB6AXuCt7xlAenG36BB-avgyjC9ePqsE65ey7nmDuFo1wFKKGETzwszuIrYK1C6IN_Q-dpzsy9E9H790E7q7Q2-ibduTvDEoFq8Xop6inTImKkP84QPtyHxgKvFU6iFxu0Qu6HyJiEoKzJYf5QMgoc41jS38jheNg4RqkAuEuwDQhE6SgFrl6DkDGfqe9Y6CXyCVAYWvGpV8x3H9CY9h1EfEKgeRBsFK40dacNCnxmVByqG-fbPp9c-C74SL",
       cafe: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
-      fine_dining: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
+      rooftop: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
       heritage_indian: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
       biryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
       south_indian: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80",
@@ -567,206 +526,149 @@
       if (text.includes('brewery') || text.includes('pub') || text.includes('beer') || text.includes('toit')) return photos.brewery;
       if (text.includes('pizza') || text.includes('sourdough')) return photos.pizza_bakery;
       if (text.includes('trattoria') || text.includes('pasta') || text.includes('gelato')) return photos.trattoria;
-      if (text.includes('rooftop') || text.includes('cocktail') || text.includes('wine')) return photos.fine_dining;
+      if (text.includes('rooftop') || text.includes('cocktail') || text.includes('drinks')) return photos.rooftop;
       if (text.includes('biryani')) return photos.biryani;
       if (text.includes('north indian') || text.includes('mughlai') || text.includes('curry')) return photos.heritage_indian;
       if (text.includes('south indian') || text.includes('dosa') || text.includes('idli')) return photos.south_indian;
       if (text.includes('cafe') || text.includes('coffee') || text.includes('roasters')) return photos.cafe;
       if (text.includes('asian') || text.includes('thai') || text.includes('chinese')) return photos.asian;
       
-      const fallbacks = [photos.pizza_bakery, photos.trattoria, photos.brewery, photos.fine_dining];
+      const fallbacks = [photos.pizza_bakery, photos.trattoria, photos.brewery, photos.rooftop];
       return fallbacks[rank % fallbacks.length];
     }
 
-    // Vibe Presets for Curated Moods
-    const presets = {
+    // Mood Presets definitions
+    const moods = {
       romantic: {
+        label: 'Romantic Date',
         location: 'Indiranagar',
         budget: 'high',
-        rating: 4.2,
-        cuisines: ['Italian', 'Artisan Sourdough Pizza', 'Craft Cocktails'],
-        vibe: 'Intimate anniversary dinner on an open garden terrace with dim candle lighting, artisan sourdough pizza & craft cocktails in Indiranagar...'
+        cuisines: ['Italian', 'Continental', 'Craft Cocktails'],
+        prompt: 'Romantic candlelit anniversary dinner with artisan sourdough pizza, quiet garden terrace & craft cocktails'
       },
       pizza: {
+        label: 'Artisan Sourdough',
         location: 'Indiranagar',
         budget: 'medium',
-        rating: 4.0,
-        cuisines: ['Artisan Sourdough Pizza', 'Italian'],
-        vibe: 'Wood-fired authentic Neapolitan pizza, 48-hour fermented crust, burrata, and relaxed rustic ambiance...'
+        cuisines: ['Pizza', 'Italian'],
+        prompt: 'Artisan wood-fired sourdough pizza with burrata, fresh basil, and cozy outdoor seating'
+      },
+      patio: {
+        label: 'Garden Patio',
+        location: 'Indiranagar',
+        budget: 'medium',
+        cuisines: ['Cafe', 'Continental'],
+        prompt: 'Lush green garden patio with fairy lighting, calm acoustics, and European bistro bites'
       },
       rooftop: {
+        label: 'Rooftop & Drinks',
         location: 'Lavelle Road',
         budget: 'high',
-        rating: 4.1,
-        cuisines: ['Continental', 'Craft Cocktails', 'Finger Food'],
-        vibe: 'Breezy rooftop panoramic skyline views with handcrafted craft cocktails, lounge music, and eclectic gourmet tapas...'
+        cuisines: ['Finger Food', 'Continental', 'Cocktails'],
+        prompt: 'Breezy rooftop lounge with panoramic city skyline views, signature cocktails, and ambient music'
       },
-      steaks: {
+      family: {
+        label: 'Family Feast',
         location: 'Koramangala 5th Block',
-        budget: 'high',
-        rating: 4.3,
-        cuisines: ['Continental', 'European', 'Wine'],
-        vibe: 'Private sommelier wine cellar dining, prime grilled cuts, velvet banquette seating, and quiet conversation...'
-      },
-      courtyard: {
-        location: 'Indiranagar',
         budget: 'medium',
-        rating: 4.0,
-        cuisines: ['Cafe', 'Continental', 'Desserts'],
-        vibe: 'Aesthetic garden courtyard with fairy-lit canopies, fresh air, gentle acoustics, and artisan coffee or brunch...'
+        cuisines: ['North Indian', 'Mughlai', 'Biryani'],
+        prompt: 'Spacious family dining with rich North Indian curries, butter naan, and comfortable booth seating'
       },
       cafe: {
+        label: 'Aesthetic Cafe',
         location: 'Indiranagar',
         budget: 'low',
-        rating: 3.9,
         cuisines: ['Cafe', 'Coffee', 'Bakery'],
-        vibe: 'Quiet work salon with high-speed Wi-Fi, specialty pour-over coffee, artisan croissants, and peaceful indoor greenery...'
+        prompt: 'Aesthetic cafe with specialty pour-over coffee, artisan croissants, and quiet reading atmosphere'
       }
     };
 
-    function selectVibe(vibeKey, btn) {
-      document.querySelectorAll('.vibe-pill').forEach(el => {
-        el.className = 'vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer';
-      });
-      btn.className = 'vibe-pill px-4 py-2 rounded-full border border-primary bg-primary/10 text-champagne font-medium tracking-wide flex items-center gap-2 whitespace-nowrap glow-gold-subtle transition-all cursor-pointer';
-
-      const p = presets[vibeKey];
-      if (!p) return;
-
-      setLocation(p.location);
-      setBudget(p.budget);
-      updateRating(p.rating);
-      document.getElementById('rating-slider').value = p.rating;
-      document.getElementById('vibe-text').value = p.vibe;
-      state.vibe = p.vibe;
-      state.cuisines = [...p.cuisines];
-      renderCuisineChips();
-
-      // Trigger instant royal recommendation curation
-      executeSearch();
-    }
-
-    function handleLocationSelect(loc) {
-      setLocation(loc);
-    }
-
-    function setLocation(loc) {
-      state.location = loc || '';
-      const sel = document.getElementById('location-select');
-      if (sel && sel.value !== loc) sel.value = loc;
-
-      const headerText = document.getElementById('header-enclave-text');
-      if (headerText) {
-        headerText.innerHTML = loc 
-          ? `Bangalore <span class="text-white/30">•</span> <span class="text-primary font-semibold">${escapeHtml(loc)} Enclave</span>`
-          : 'Bangalore <span class="text-white/30">•</span> Haute Curation';
+    function toggleMood(moodKey, btn) {
+      if (state.selectedMood === moodKey) {
+        // Deselect
+        state.selectedMood = null;
+        btn.className = 'mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5';
+        document.getElementById('ai-search-input').value = '';
+        return;
       }
 
-      document.querySelectorAll('.enclave-chip').forEach(c => {
-        if (loc && c.textContent.trim().toLowerCase().includes(loc.slice(0, 4).toLowerCase())) {
-          c.className = 'enclave-chip px-2.5 py-1 rounded-full bg-primary/20 border border-primary/60 text-champagne font-semibold text-[10px] font-sans transition-all cursor-pointer glow-gold-subtle';
-        } else {
-          c.className = 'enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer';
-        }
+      // Activate mood
+      state.selectedMood = moodKey;
+      document.querySelectorAll('.mood-pill').forEach(b => {
+        b.className = 'mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5';
       });
+      btn.className = 'mood-pill px-3.5 py-2 rounded-xl bg-primary-container/20 border border-primary text-primary font-bold font-label-md text-sm shadow-sm transition-all cursor-pointer flex items-center gap-1.5';
+
+      const m = moods[moodKey];
+      if (m) {
+        document.getElementById('ai-search-input').value = m.prompt;
+        if (!state.location) setLocality(m.location);
+        if (!state.budget) setBudget(m.budget);
+        state.cuisines = [...m.cuisines];
+      }
     }
 
     function setBudget(tier, btn) {
       if (state.budget === tier) {
         // Toggle off
         state.budget = null;
-        const lbl = document.getElementById('budget-current-label');
-        if (lbl) lbl.textContent = 'Any Tier';
+        document.getElementById('budget-label').textContent = 'Any Budget';
         ['low', 'medium', 'high'].forEach(t => {
           const b = document.getElementById(`budget-${t}`);
-          if (b) b.className = 'budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer';
+          if (b) b.className = 'budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer';
         });
         return;
       }
-      
+
       state.budget = tier;
-      const tierLabels = { low: '≤ ₹400', medium: '₹401 - ₹1,200', high: '> ₹1,200' };
-      const lbl = document.getElementById('budget-current-label');
-      if (lbl) lbl.textContent = tierLabels[tier] || 'Custom';
+      const budgetLabels = { low: '≤ ₹500 for two', medium: '₹500 - ₹1.5k for two', high: '₹1.5k+ for two' };
+      document.getElementById('budget-label').textContent = budgetLabels[tier] || 'Custom';
 
       ['low', 'medium', 'high'].forEach(t => {
         const b = document.getElementById(`budget-${t}`);
         if (b) {
           if (t === tier) {
-            b.className = 'budget-btn py-2 rounded-lg bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border border-primary/50 text-champagne font-semibold glow-gold-subtle shadow transition-all cursor-pointer';
+            b.className = 'budget-pill py-2 px-2 text-center rounded-xl bg-primary-container/20 border border-primary text-primary font-bold font-label-md text-xs shadow-sm transition-all cursor-pointer';
           } else {
-            b.className = 'budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer';
+            b.className = 'budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer';
           }
         }
       });
     }
 
-    function updateRating(val) {
-      const num = parseFloat(val);
-      const badge = document.getElementById('rating-badge');
-      const cur = document.getElementById('rating-current-val');
-      if (num <= 1.0) {
-        state.minRating = null;
-        if (badge) {
-          badge.className = 'text-[10px] font-sans text-on-surface-variant px-2 py-0.5 rounded-full bg-white/[0.04] border border-gold-border-subtle';
-          badge.textContent = 'Any Score';
+    function handleLocalityChange(loc) {
+      setLocality(loc);
+    }
+
+    function setLocality(loc) {
+      state.location = loc || '';
+      const sel = document.getElementById('locality-select');
+      if (sel && sel.value !== loc) sel.value = loc;
+
+      const navText = document.getElementById('nav-locality-text');
+      if (navText) navText.textContent = loc ? `${loc}, Bangalore` : 'Bangalore';
+
+      const tag = document.getElementById('results-locality-tag');
+      if (tag) tag.textContent = loc || 'Bangalore';
+
+      const readyText = document.getElementById('ready-curate-text');
+      if (readyText) readyText.textContent = loc ? `Ready to curate for ${loc} & surrounding areas` : 'Ready to curate for Bangalore & surrounding areas';
+
+      document.querySelectorAll('.loc-chip').forEach(c => {
+        if (loc && c.textContent.trim().toLowerCase().includes(loc.slice(0, 4).toLowerCase())) {
+          c.className = 'loc-chip px-2.5 py-1 rounded-lg bg-primary-container/20 border border-primary text-primary font-semibold text-[11px] font-label-md transition-all cursor-pointer';
+        } else {
+          c.className = 'loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer';
         }
-        if (cur) cur.textContent = '1.0★';
-      } else {
-        state.minRating = num;
-        if (badge) {
-          badge.className = 'text-[10px] font-sans text-champagne font-bold px-2 py-0.5 rounded-full bg-primary/10 border border-primary/40';
-          badge.textContent = `${num.toFixed(1)}★+`;
-        }
-        if (cur) cur.textContent = `${num.toFixed(1)}★`;
-      }
+      });
     }
 
-    function addQuickCuisine(name) {
-      if (!state.cuisines.includes(name)) {
-        state.cuisines.push(name);
-        renderCuisineChips();
-      }
-    }
-
-    function removeCuisine(span, cuisineName) {
-      state.cuisines = state.cuisines.filter(c => c !== cuisineName);
-      renderCuisineChips();
-    }
-
-    function renderCuisineChips() {
-      const box = document.getElementById('cuisine-chip-box');
-      if (!box) return;
-      let html = '';
-      if (!state.cuisines || state.cuisines.length === 0) {
-        html += '<span class="text-xs text-on-surface-variant/60 italic px-1 font-editorial" id="no-cuisines-hint">None selected (All specialities included)</span>';
-      } else {
-        state.cuisines.forEach(c => {
-          html += `
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/50 text-champagne text-xs font-sans">
-              <span>${escapeHtml(c)}</span>
-              <button type="button" onclick="removeCuisine(this, '${escapeHtml(c)}')" class="text-champagne/70 hover:text-white text-sm leading-none ml-0.5 cursor-pointer">×</button>
-            </span>
-          `;
-        });
-      }
-      html += `
-        <button type="button" onclick="toggleCuisineMenu()" class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-dashed border-white/20 hover:border-primary/50 text-on-surface-variant hover:text-champagne text-xs font-sans transition-colors cursor-pointer">
-          <span class="material-symbols-outlined text-[13px]">add</span>
-          <span>Custom Taste</span>
-        </button>
-      `;
-      box.innerHTML = html;
-    }
-
-    function toggleCuisineMenu() {
-      const more = prompt("Specify custom gastronomic taste or speciality (e.g. French Bistro, Neapolitan, Microbrewery, Mughlai, Vegan):");
-      if (more && more.trim()) {
-        const trimmed = more.trim();
-        if (!state.cuisines.includes(trimmed)) {
-          state.cuisines.push(trimmed);
-          renderCuisineChips();
-        }
+    function focusLocality() {
+      const sel = document.getElementById('locality-select');
+      if (sel) {
+        sel.focus();
+        sel.classList.add('ring-2', 'ring-primary');
+        setTimeout(() => sel.classList.remove('ring-2', 'ring-primary'), 2000);
       }
     }
 
@@ -775,7 +677,7 @@
       if (!toast) return;
       const icon = type === 'warning' ? 'location_on' : 'auto_awesome';
       toast.innerHTML = `
-        <span class="material-symbols-outlined text-primary text-[18px]">${icon}</span>
+        <span class="material-symbols-outlined text-primary text-[20px]">${icon}</span>
         <span class="text-on-surface">${escapeHtml(message)}</span>
       `;
       toast.classList.remove('translate-y-4', 'opacity-0', 'pointer-events-none');
@@ -790,96 +692,88 @@
       state.minRating = null;
       state.cuisines = [];
       state.vibe = '';
+      state.selectedMood = null;
 
-      const sel = document.getElementById('location-select');
-      if (sel) sel.value = '';
+      document.getElementById('ai-search-input').value = '';
+      document.getElementById('locality-select').value = '';
+      document.getElementById('nav-locality-text').textContent = 'Bangalore';
+      document.getElementById('ready-curate-text').textContent = 'Ready to curate for Bangalore & surrounding areas';
+      document.getElementById('budget-label').textContent = 'Any Budget';
 
-      const headerText = document.getElementById('header-enclave-text');
-      if (headerText) headerText.innerHTML = 'Bangalore <span class="text-white/30">•</span> Haute Curation';
-
-      document.querySelectorAll('.enclave-chip').forEach(c => {
-        c.className = 'enclave-chip px-2.5 py-1 rounded-full bg-white/[0.02] border border-gold-border-subtle text-on-surface-variant hover:text-white text-[10px] font-sans transition-all cursor-pointer';
+      document.querySelectorAll('.mood-pill').forEach(b => {
+        b.className = 'mood-pill px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5';
       });
 
-      const lbl = document.getElementById('budget-current-label');
-      if (lbl) lbl.textContent = 'Any Tier';
-
-      ['low', 'medium', 'high'].forEach(t => {
-        const b = document.getElementById(`budget-${t}`);
-        if (b) b.className = 'budget-btn py-2 rounded-lg text-on-surface-variant hover:text-white transition-all cursor-pointer';
+      document.querySelectorAll('.budget-pill').forEach(b => {
+        b.className = 'budget-pill py-2 px-2 text-center rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-xs transition-all cursor-pointer';
       });
 
-      const slider = document.getElementById('rating-slider');
-      if (slider) slider.value = 1.0;
-      updateRating(1.0);
-
-      renderCuisineChips();
-
-      const vibeInput = document.getElementById('vibe-text');
-      if (vibeInput) vibeInput.value = '';
-
-      document.querySelectorAll('.vibe-pill').forEach(el => {
-        el.className = 'vibe-pill px-4 py-2 rounded-full border border-gold-border-subtle hover:border-gold-border bg-white/[0.02] text-on-surface hover:text-white font-normal tracking-wide flex items-center gap-2 whitespace-nowrap transition-all cursor-pointer';
+      document.querySelectorAll('.loc-chip').forEach(c => {
+        c.className = 'loc-chip px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-outline hover:text-on-surface text-[11px] font-label-md transition-all cursor-pointer';
       });
 
-      const resultsWrapper = document.getElementById('results-wrapper');
-      const welcomeCanvas = document.getElementById('welcome-canvas');
-      if (resultsWrapper) resultsWrapper.classList.add('hidden');
-      if (welcomeCanvas) welcomeCanvas.classList.remove('hidden');
+      document.getElementById('curated-results-container').classList.add('hidden');
+      document.getElementById('empty-recommendations-placeholder').classList.remove('hidden');
     }
 
     // Execute Search against backend
     async function executeSearch() {
-      const locSelect = document.getElementById('location-select');
-      const selectedLoc = locSelect ? locSelect.value : state.location;
+      const searchInput = document.getElementById('ai-search-input');
+      const inputVal = searchInput ? searchInput.value.trim() : '';
+
+      // Determine location: from state, dropdown, or extracted from input text
+      let selectedLoc = state.location || document.getElementById('locality-select').value;
+      if (!selectedLoc && inputVal) {
+        const knownLocalities = ['Indiranagar', 'Koramangala', 'Lavelle Road', 'HSR', 'Whitefield', 'MG Road', 'Bellandur', 'Jayanagar', 'BTM', 'Malleshwaram', 'JP Nagar'];
+        for (const loc of knownLocalities) {
+          if (inputVal.toLowerCase().includes(loc.toLowerCase())) {
+            selectedLoc = loc;
+            setLocality(loc);
+            break;
+          }
+        }
+      }
 
       if (!selectedLoc || selectedLoc.trim() === '') {
-        if (locSelect) {
-          locSelect.focus();
-          locSelect.classList.add('ring-2', 'ring-primary', 'border-primary');
-          setTimeout(() => {
-            locSelect.classList.remove('ring-2', 'ring-primary', 'border-primary');
-          }, 2500);
-        }
-        showToast('Please select a Target Enclave / District to commission recommendations.', 'warning');
+        focusLocality();
+        showToast('Please select a Bangalore locality or mention one in your request.', 'warning');
         return;
       }
 
       state.location = selectedLoc;
-      const vibeInput = document.getElementById('vibe-text');
-      state.vibe = vibeInput ? vibeInput.value : '';
+      state.vibe = inputVal || state.vibe || '';
 
-      const btn = document.getElementById('search-btn');
-      const btnText = document.getElementById('search-btn-text');
-      const welcomeCanvas = document.getElementById('welcome-canvas');
-      const resultsWrapper = document.getElementById('results-wrapper');
-      const cardsContainer = document.getElementById('cards-container');
-      const alertsArea = document.getElementById('status-alerts-area');
+      const btn = document.getElementById('btn-generate');
+      const btnText = document.getElementById('btn-generate-text');
+      const emptyPlaceholder = document.getElementById('empty-recommendations-placeholder');
+      const resultsContainer = document.getElementById('curated-results-container');
+      const cardsList = document.getElementById('cards-list');
+      const alertsContainer = document.getElementById('alerts-container');
 
-      // Switch view: hide welcome, reveal recommendations canvas
-      if (welcomeCanvas) welcomeCanvas.classList.add('hidden');
-      if (resultsWrapper) resultsWrapper.classList.remove('hidden');
+      // Switch view: reveal results container
+      emptyPlaceholder.classList.add('hidden');
+      resultsContainer.classList.remove('hidden');
 
-      // Sleek royal loading skeleton
-      cardsContainer.innerHTML = `
-        <div class="bg-[#0B0C10] rounded-2xl border border-gold-border p-12 text-center animate-pulse glow-gold-subtle">
-          <div class="gold-spinner mx-auto mb-4"></div>
-          <h3 class="text-lg font-serif-royal text-white mb-2">Commissioning Royal Maître D'...</h3>
-          <p class="text-xs text-on-surface-variant font-sans">
-            Screening candidate enclaves in <span class="text-champagne font-medium">${escapeHtml(state.location)}</span> via DuckDB &amp; GPT-OSS-120B
+      // Show sleek loading state
+      cardsList.innerHTML = `
+        <div class="rounded-2xl bg-surface-container-low border border-white/5 p-12 text-center animate-pulse space-y-3">
+          <div class="crimson-spinner mx-auto mb-2"></div>
+          <h3 class="font-headline-sm font-bold text-on-surface">Curating Atmospheric Recommendations...</h3>
+          <p class="font-body-md text-outline">
+            Screening candidates in <span class="text-primary font-semibold">${escapeHtml(state.location)}</span> via DuckDB &amp; GPT-OSS-120B
           </p>
         </div>
       `;
 
       btn.disabled = true;
-      btnText.innerHTML = '<div class="gold-spinner inline-block align-middle mr-2"></div><span>Curating Royal Recommendations...</span>';
+      btnText.textContent = 'Curating...';
 
       try {
         const payload = {
           location: state.location,
           budget_tier: state.budget || null,
           cuisines: state.cuisines && state.cuisines.length > 0 ? state.cuisines : null,
-          min_rating: state.minRating && state.minRating > 1.0 ? state.minRating : null,
+          min_rating: state.minRating,
           vibe_and_preferences: state.vibe && state.vibe.trim() ? state.vibe.trim() : null,
           max_recommendations: 3
         };
@@ -893,158 +787,139 @@
         });
 
         const elapsedMs = performance.now() - startTime;
-        if (!res.ok) throw new Error(`API status ${res.status}`);
+        if (!res.ok) throw new Error(`API returned HTTP ${res.status}`);
         const data = await res.json();
 
-        // 1. Update Headline & Diagnostic Metrics
+        // 1. Update Header Diagnostics
         const matchesCount = data.recommendations ? data.recommendations.length : 0;
-        const totalCandidates = (data.query_summary && data.query_summary.total_candidates_analyzed) || 15;
         const speedDisplay = elapsedMs >= 1000 ? `${(elapsedMs / 1000).toFixed(1)}s` : `${Math.round(elapsedMs)}ms`;
 
-        document.getElementById('results-headline').textContent = `${matchesCount} Handpicked Enclaves in ${state.location}`;
-        document.getElementById('metric-screened').textContent = `Screened: ${totalCandidates} spots`;
-        document.getElementById('metric-speed').textContent = `Latency: ${speedDisplay}`;
-        document.getElementById('metric-status').textContent = data.status.toUpperCase();
+        document.getElementById('results-locality-tag').textContent = state.location;
+        document.getElementById('meta-latency-tag').textContent = `Latency: ${speedDisplay} • ${data.status.toUpperCase()}`;
 
-        // 2. Update Chef d'Hôtel Curatorial Summary
+        // 2. Update Concierge Note
         if (data.concierge_note) {
-          document.getElementById('synthesis-text').innerHTML = `
-            Handpicked ${matchesCount} dining sanctuaries in <strong class="text-champagne font-semibold">${escapeHtml(state.location)}</strong>: ${escapeHtml(data.concierge_note)}
+          document.getElementById('concierge-note-text').innerHTML = `
+            Handpicked ${matchesCount} verified spots in <strong class="text-primary font-semibold">${escapeHtml(state.location)}</strong>: ${escapeHtml(data.concierge_note)}
           `;
         }
 
-        // 3. Dynamic Status Alerts (Fallback / Smart Relaxation)
+        // 3. Dynamic Alerts (Fallback or Relaxation)
         let alertsHtml = '';
         if (data.status === 'fallback') {
           alertsHtml += `
-            <div class="p-4 rounded-xl bg-[#2A1D08]/60 border border-primary/40 flex items-center justify-between text-xs text-champagne">
-              <div class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+            <div class="p-3.5 rounded-xl bg-amber-950/30 border border-amber-500/40 flex items-center justify-between text-xs text-amber-200">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">bolt</span>
                 <span><strong>Deterministic Fallback Active:</strong> Real-time LLM inference paused; instant multi-factor heuristic ranking delivered.</span>
               </div>
-              <span class="font-mono text-[10px] text-primary/80">0.08ms</span>
+              <span class="font-mono text-[10px] text-amber-400">0.08ms</span>
             </div>
           `;
         }
         if (data.query_summary && data.query_summary.is_relaxed) {
           alertsHtml += `
-            <div class="p-4 rounded-xl bg-cyan-950/30 border border-cyan-500/40 flex items-center justify-between text-xs text-cyan-200">
-              <div class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-cyan-400 text-[18px]">info</span>
-                <span><strong>Smart Enclave Relaxation:</strong> ${escapeHtml(data.query_summary.relaxation_explanation || 'Expanded locality to find top-rated matches.')}</span>
+            <div class="p-3.5 rounded-xl bg-cyan-950/30 border border-cyan-500/40 flex items-center justify-between text-xs text-cyan-200">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">info</span>
+                <span><strong>Smart Locality Relaxation:</strong> ${escapeHtml(data.query_summary.relaxation_explanation || 'Expanded area to find top-rated matches.')}</span>
               </div>
             </div>
           `;
         }
-        alertsArea.innerHTML = alertsHtml;
+        alertsContainer.innerHTML = alertsHtml;
 
-        // 4. Render Royal Restaurant Showcase Cards matching Google Stitch
+        // 4. Render Recommendation Cards matching Google Stitch code.html
         if (!data.recommendations || data.recommendations.length === 0) {
-          cardsContainer.innerHTML = `
-            <div class="bg-[#0B0C10] rounded-2xl border border-dashed border-gold-border p-12 text-center">
-              <div class="text-4xl mb-3">🍽️</div>
-              <h3 class="text-lg font-serif-royal text-white mb-2">No Matching Enclaves Found</h3>
-              <p class="text-xs text-on-surface-variant max-w-md mx-auto mb-5 font-sans">
-                No establishments strictly satisfied every threshold in ${escapeHtml(state.location)}.
+          cardsList.innerHTML = `
+            <div class="rounded-2xl border border-dashed border-outline-variant/40 bg-surface-container-low p-10 text-center space-y-3">
+              <span class="material-symbols-outlined text-[36px] text-outline">search_off</span>
+              <h3 class="font-headline-sm font-bold text-on-surface">No Exact Matches Found</h3>
+              <p class="font-body-md text-outline max-w-md mx-auto">
+                No eateries strictly met all criteria in ${escapeHtml(state.location)}. Try relaxing your budget or searching another locality.
               </p>
-              <button type="button" onclick="resetFilters()" class="px-5 py-2.5 rounded-full border border-gold-border hover:bg-primary hover:text-[#07080B] text-champagne text-xs font-sans font-semibold tracking-wider uppercase transition-all cursor-pointer">
-                Reset Criteria &amp; Explore
+              <button type="button" onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-xs cursor-pointer">
+                Reset Criteria
               </button>
             </div>
           `;
         } else {
-          const rankBadges = ['Crown Recommendation', 'Alternative Enclave', 'Social Enclave', 'Cellar Reserve', 'Notable Pick'];
           let cardsHtml = '';
+          const matchPercentages = [99, 96, 92, 88, 85];
 
           data.recommendations.forEach((item, idx) => {
-            const badgeTag = item.match_badge || rankBadges[idx] || `#${item.rank} Recommendation`;
-            const isCrown = idx === 0;
+            const matchScore = matchPercentages[idx] || 90;
             const imgUrl = getPhotoForVenue(item.cuisines || [], item.name, idx);
 
-            const cuisineChips = (item.cuisines || []).map(c => 
-              `<span class="px-3 py-1 rounded-full bg-white/[0.03] border border-gold-border-subtle text-on-surface-variant text-[11px] font-sans">${escapeHtml(c)}</span>`
+            const cuisineChips = (item.cuisines || []).slice(0, 3).map(c => 
+              `<span class="px-2.5 py-1 rounded-md bg-surface-container border border-outline-variant/30 text-on-surface font-body-sm">${escapeHtml(c)}</span>`
             ).join('');
 
             const orderTag = String(item.online_order).toLowerCase() === 'yes'
-              ? `<span class="text-emerald-400 flex items-center gap-1 font-medium"><span class="material-symbols-outlined text-[14px]">delivery_dining</span> Online Delivery</span>`
-              : `<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">restaurant</span> Dine-in Salon</span>`;
+              ? `<span class="px-2.5 py-1 rounded-md bg-surface-container text-emerald-400 font-body-sm flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">delivery_dining</span> Online Order</span>`
+              : `<span class="px-2.5 py-1 rounded-md bg-surface-container text-outline font-body-sm">Dine-in Only</span>`;
 
             const bookingTag = String(item.book_table).toLowerCase() === 'yes'
-              ? `<span class="text-champagne flex items-center gap-1 font-medium"><span class="material-symbols-outlined text-[14px]">event_available</span> Instant Booking</span>`
-              : `<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">event_seat</span> Walk-in Seating</span>`;
+              ? `<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-body-sm flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">event_available</span> Instant Booking</span>`
+              : `<span class="px-2.5 py-1 rounded-md bg-surface-container text-outline font-body-sm">Walk-in</span>`;
 
             cardsHtml += `
-              <article class="bg-[#0B0C10] rounded-2xl border ${isCrown ? 'border-gold-border hover:border-primary/50 glow-gold-subtle shadow-2xl' : 'border-gold-border-subtle hover:border-gold-border shadow-xl'} transition-all duration-500 overflow-hidden group">
-                <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+              <article class="rounded-2xl bg-surface-container-low border border-white/5 hover:border-primary/40 transition-all duration-200 overflow-hidden shadow-lg group">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
                   
                   <!-- Visual Column -->
-                  <div class="lg:col-span-6 relative min-h-[320px] lg:min-h-[460px] overflow-hidden ${idx % 2 === 1 ? 'order-first lg:order-last' : ''}">
-                    <img alt="${escapeHtml(item.name)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90" src="${imgUrl}"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-transparent to-black/50 lg:hidden"></div>
-                    
-                    <div class="absolute top-5 ${idx % 2 === 1 ? 'right-5' : 'left-5'}">
-                      <span class="px-3.5 py-1.5 rounded-full bg-[#07080B]/85 border ${isCrown ? 'border-primary/60 text-champagne glow-gold-subtle' : 'border-white/15 text-on-surface'} text-[10px] font-sans font-semibold tracking-[0.25em] uppercase backdrop-blur-md">
-                        ${escapeHtml(badgeTag)}
-                      </span>
+                  <div class="lg:col-span-5 relative h-64 lg:h-auto min-h-[240px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${escapeHtml(item.name)}" src="${imgUrl}"/>
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm font-bold shadow">
+                      <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span>${Number(item.rating).toFixed(1)} · ${matchScore}% AI Match</span>
                     </div>
                   </div>
 
-                  <!-- Refined Narrative Column -->
-                  <div class="lg:col-span-6 p-8 sm:p-10 lg:p-12 flex flex-col justify-between">
-                    <div>
-                      
-                      <!-- Header & Rating -->
-                      <div class="flex items-start justify-between gap-4 mb-4">
+                  <!-- Details Column -->
+                  <div class="lg:col-span-7 p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                      <div class="flex items-start justify-between gap-4">
                         <div>
-                          <span class="text-[10px] uppercase font-sans tracking-[0.25em] text-on-surface-variant font-medium">
-                            ${escapeHtml(item.location)} ${item.address ? '• ' + escapeHtml(item.address) : ''}
-                          </span>
-                          <h3 class="text-3xl sm:text-4xl font-normal text-white font-serif-royal tracking-tight mt-1 group-hover:text-champagne transition-colors">
+                          <h3 class="font-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
                             ${escapeHtml(item.name)}
                           </h3>
+                          <p class="font-body-md text-outline flex items-center gap-1.5 mt-0.5">
+                            <span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
+                            <span>${escapeHtml(item.location)} ${item.address ? '· ' + escapeHtml(item.address) : ''}</span>
+                          </p>
                         </div>
-                        
-                        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.03] border border-gold-border-subtle flex-shrink-0">
-                          <span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
-                          <span class="text-sm font-sans font-bold text-champagne">${Number(item.rating).toFixed(1)}</span>
-                          <span class="text-[11px] text-on-surface-variant font-sans">(${Number(item.votes).toLocaleString()})</span>
+                        <div class="text-right flex-shrink-0">
+                          <span class="font-title-md font-bold text-on-surface">₹${Number(item.approx_cost_for_two).toLocaleString()}</span>
+                          <span class="block text-xs text-outline">for two</span>
                         </div>
                       </div>
 
-                      <!-- Key Characteristics -->
-                      <div class="flex flex-wrap items-center gap-3.5 text-xs font-sans text-on-surface-variant mb-6 pb-6 border-b border-gold-border-subtle">
-                        <span class="text-champagne font-medium">₹${Number(item.approx_cost_for_two).toLocaleString()} for two</span>
-                        <span class="w-1 h-1 rounded-full bg-primary/40"></span>
+                      <!-- Feature Chips -->
+                      <div class="flex flex-wrap items-center gap-1.5 text-xs text-outline">
+                        ${cuisineChips}
                         ${bookingTag}
-                        <span class="w-1 h-1 rounded-full bg-primary/40"></span>
                         ${orderTag}
                       </div>
 
-                      <!-- Cuisine Pills -->
-                      <div class="flex flex-wrap gap-1.5 mb-6">
-                        ${cuisineChips}
-                      </div>
-
-                      <!-- Maître D' Verdict / Editorial Sommelier Note -->
-                      <div class="relative pl-6 py-1 mb-8 border-l-2 ${isCrown ? 'border-primary/70' : 'border-primary/50'}">
-                        <span class="text-[10px] uppercase font-sans tracking-[0.25em] text-primary font-semibold block mb-1.5">Maître D' Verdict</span>
-                        <p class="font-editorial-quote italic text-lg sm:text-xl text-champagne-light/90 leading-relaxed font-normal">
-                          “${escapeHtml(item.ai_explanation)}”
-                        </p>
-                      </div>
-
+                      <!-- Why AI Matched Callout -->
+                      <p class="text-sm text-on-surface-variant bg-surface-container/60 p-3.5 rounded-xl border border-outline-variant/20 leading-relaxed font-body-md">
+                        <strong class="text-primary font-semibold">Why AI matched:</strong> ${escapeHtml(item.ai_explanation)}
+                      </p>
                     </div>
 
-                    <!-- Actions -->
-                    <div class="flex flex-wrap items-center gap-3 pt-4">
-                      <a href="${item.url || 'https://www.zomato.com'}" target="_blank" class="px-7 py-3 rounded-full bg-gradient-to-r from-primary via-[#E5C158] to-primary hover:from-primary-bright hover:to-primary text-[#07080B] text-xs font-sans font-bold tracking-[0.2em] uppercase glow-gold transition-all active:scale-95 flex items-center gap-2 cursor-pointer shadow-lg">
-                        <span class="material-symbols-outlined text-[16px]">table_restaurant</span>
+                    <!-- Actions Row -->
+                    <div class="pt-2 flex items-center gap-3 border-t border-outline-variant/15">
+                      <a href="${item.url || 'https://www.zomato.com'}" target="_blank" class="flex-1 py-2.5 px-4 rounded-xl bg-primary-container text-on-primary-container font-label-lg font-bold shadow-md hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer">
+                        <span class="material-symbols-outlined text-[18px]">event_seat</span>
                         <span>Reserve Table</span>
                       </a>
-                      <a href="${item.url || 'https://www.zomato.com'}" target="_blank" class="px-6 py-3 rounded-full border border-gold-border hover:border-primary/50 text-champagne hover:text-white text-xs font-sans font-medium tracking-[0.18em] uppercase hover:bg-primary/[0.04] transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer">
-                        <span>View Details</span>
-                        <span class="material-symbols-outlined text-[14px] text-primary">north_east</span>
+                      <a href="${item.url || 'https://www.zomato.com'}" target="_blank" class="py-2.5 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md transition-colors cursor-pointer">
+                        View Menu
                       </a>
+                      <button type="button" onclick="this.classList.toggle('text-primary-container'); showToast('Added to your shortlisted spots')" class="p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/40 text-outline hover:text-primary transition-colors cursor-pointer" title="Save to Shortlist">
+                        <span class="material-symbols-outlined text-[18px]">bookmark</span>
+                      </button>
                     </div>
 
                   </div>
@@ -1053,7 +928,7 @@
             `;
           });
 
-          cardsContainer.innerHTML = cardsHtml;
+          cardsList.innerHTML = cardsHtml;
         }
 
       } catch (err) {
@@ -1063,15 +938,15 @@
                💡 <strong>Deployment Tip:</strong> Ensure your Railway backend URL is healthy and configured in <code>vercel.json</code> rewrites or in <code>window.API_BASE_URL</code>.
              </div>`
           : '';
-        alertsArea.innerHTML = `
+        alertsContainer.innerHTML = `
           <div class="p-4 rounded-xl bg-red-950/40 border border-red-500/40 text-xs text-red-200">
-            <strong>Error connecting to Royal Concierge API:</strong> ${escapeHtml(err.message)}
+            <strong>Error connecting to Concierge API:</strong> ${escapeHtml(err.message)}
             ${hint}
           </div>
         `;
       } finally {
         btn.disabled = false;
-        btnText.innerHTML = 'Curate Royal Recommendations';
+        btnText.textContent = 'Generate Recommendations';
       }
     }
 

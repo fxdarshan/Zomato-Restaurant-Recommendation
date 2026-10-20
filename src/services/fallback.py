@@ -35,25 +35,25 @@ _BUDGET_BADGES: dict[str, str] = {
 def _assign_badge(candidate: CandidateRestaurant, request: UserPreferenceRequest, rank: int = 1) -> str:
     """Deterministically assign a match badge to a candidate restaurant."""
     if rank == 1:
-        return "Crown Recommendation"
+        return "Best Match"
     if rank == 2:
-        return "Alternative Enclave"
+        return "Popular Pick"
     if rank == 3:
-        return "Social Enclave"
+        return "Top Value"
 
     vibe = (request.vibe_and_preferences or "").lower()
     if candidate.rating >= 4.5 and candidate.votes >= 200:
-        return "Royal Gem"
+        return "Top Rated"
 
     if any(kw in vibe for kw in ("date", "romantic", "anniversary", "candle")):
-        return "Romantic Sanctuary"
+        return "Romantic Vibe"
 
     highlights_text = " ".join(h.lower() for h in candidate.highlights)
     if any(kw in highlights_text for kw in ("family", "kids", "spacious", "group")):
-        return "Family Salon"
+        return "Family Feast"
 
     if any(kw in highlights_text for kw in ("quick bite", "fast food", "takeaway", "pocket")):
-        return "Bespoke Quick Bites"
+        return "Quick Bites"
 
     return _BUDGET_BADGES.get(candidate.budget_tier, "Curated Selection")
 

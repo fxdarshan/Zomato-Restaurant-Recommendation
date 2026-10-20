@@ -15,8 +15,8 @@ from pathlib import Path
 import streamlit as st
 
 st.set_page_config(
-    page_title="ZOMATO ROYAL CONCIERGE — Haute Gastronomie",
-    page_icon="⚜️",
+    page_title="Zomato Concierge — AI Dining Experience",
+    page_icon="🍽️",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -25,9 +25,9 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-        /* Force royal dark background and remove Streamlit padding */
+        /* Force dark background and remove Streamlit padding */
         .stApp {
-            background-color: #07080B !important;
+            background-color: #111317 !important;
         }
         .block-container {
             padding: 0 !important;
@@ -47,7 +47,7 @@ st.markdown(
             width: 100% !important;
             min-height: 2200px !important;
             border: none !important;
-            background-color: #0A0C10 !important;
+            background-color: #111317 !important;
         }
     </style>
     """,
@@ -58,7 +58,7 @@ frontend_file = Path(__file__).resolve().parent.parent / "frontend" / "index.htm
 if frontend_file.exists():
     html_code = frontend_file.read_text(encoding="utf-8")
     # Inside Streamlit iframe, route API calls directly to FastAPI on port 8000
-    html_code = html_code.replace("fetch('/api/v1/recommend'", "fetch('http://localhost:8000/api/v1/recommend'")
+    html_code = f"<script>window.API_BASE_URL = 'http://localhost:8000';</script>\n" + html_code
     st.components.v1.html(html_code, height=2200, scrolling=True)
 else:
     st.error("Frontend template not found at frontend/index.html")
