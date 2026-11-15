@@ -1,0 +1,11 @@
+# What the API needs at run time on Vercel. The root requirements.txt also has the data pipeline,
+# Streamlit and test tools, which would make the function too large. Versions match the local
+# environment the API was tested with.
+duckdb==1.5.6
+fastapi==0.143.0
+groq==1.7.0
+polars==2.0.0
+pydantic==2.14.1
+pydantic-settings==2.15.0
+python-dotenv==1.2.4
+uvicorn==0.54.0

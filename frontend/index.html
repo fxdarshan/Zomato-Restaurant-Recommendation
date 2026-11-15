@@ -1013,6 +1013,11 @@
       }
       try {
         const saved = localStorage.getItem('ZOMATO_API_BASE_URL');
+        // The Railway backend is gone; a saved Railway address would only fail, so use the proxy.
+        if (saved && /\.up\.railway\.app/i.test(saved)) {
+          localStorage.removeItem('ZOMATO_API_BASE_URL');
+          return '';
+        }
         if (saved && saved.trim()) return saved.trim().replace(/\/+$/, '');
       } catch (_) {}
       return '';
