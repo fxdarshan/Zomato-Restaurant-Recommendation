@@ -137,10 +137,14 @@ class CandidateRetriever:
         self._df: pl.DataFrame = pl.read_parquet(self.parquet_path)
         self._total_records: int = len(self._df)
 
-        # Warm in-memory DuckDB connection with zero-copy Arrow registration
+        # Warm in-memory DuckDB connection over the same Parquet file. DuckDB reads it directly,
+        # so pyarrow isn't needed at run time (it kept the Vercel function too large).
         import duckdb
         self._duckdb_con = duckdb.connect(":memory:")
-        self._duckdb_con.register("restaurants", self._df.to_arrow())
+        parquet_sql = str(self.parquet_path).replace("'", "''")
+        self._duckdb_con.execute(
+            f"CREATE VIEW restaurants AS SELECT * FROM read_parquet('{parquet_sql}')"
+        )
 
         # Build canonical locality index for fuzzy and normalization lookup
         self._unique_locations: list[str] = self._df["location"].unique().to_list()
